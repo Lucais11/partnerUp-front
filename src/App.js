@@ -5,6 +5,7 @@ const http = async (path, method, payload) => {
   const options = {
     method,
   };
+
   if (payload) {
     options.body = JSON.stringify(payload);
     options.headers = { "Content-Type": "application/json" };
