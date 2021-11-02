@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const http = async (path, method, payload) => {
-  const serverUrl = "http://localhost:5000";
+  const serverUrl = process.env.REACT_APP_API || "http://localhost:5000";
   const options = {
     method,
   };
